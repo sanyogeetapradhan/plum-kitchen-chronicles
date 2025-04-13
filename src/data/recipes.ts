@@ -164,7 +164,8 @@ export const getFullRecipe = (slug: string): RecipeDetailProps | undefined => {
       servings: 4,
       ingredients: mushroomRisottoIngredients,
       instructions: mushroomRisottoInstructions,
-      nutrition: mushroomRisottoNutrition
+      nutrition: mushroomRisottoNutrition,
+      tags: recipe.tags // Make sure tags is included here
     };
   }
   
@@ -182,6 +183,7 @@ export const getFullRecipe = (slug: string): RecipeDetailProps | undefined => {
       fat: 0,
       fiber: 0,
       sugar: 0
-    }
+    },
+    tags: recipe.tags || [] // Make sure tags is included with fallback
   };
 };

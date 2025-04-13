@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import IngredientList, { Ingredient } from './IngredientList';
 import InstructionSteps, { Instruction } from './InstructionSteps';
+import CookMode from './CookMode';
 
 export type NutritionInfo = {
   calories: number;
@@ -46,6 +47,7 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({
   nutrition,
 }) => {
   const [isCookMode, setIsCookMode] = useState(false);
+  const [showCookModeFullscreen, setShowCookModeFullscreen] = useState(false);
   
   const getDifficultyColor = () => {
     switch (difficulty) {
@@ -64,6 +66,16 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({
   
   return (
     <div className="w-full">
+      {/* Cook Mode Fullscreen */}
+      {showCookModeFullscreen && (
+        <CookMode
+          instructions={instructions}
+          ingredients={ingredients}
+          title={title}
+          onClose={() => setShowCookModeFullscreen(false)}
+        />
+      )}
+      
       {/* Hero Header */}
       <div className="relative w-full h-80 md:h-96 rounded-xl overflow-hidden mb-8">
         <img 
@@ -144,13 +156,21 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({
         <p className="text-plum-100 leading-relaxed">{description}</p>
       </div>
       
+      {/* Cook Mode Button */}
+      <Button 
+        className="w-full bg-plum-300 hover:bg-plum-400 text-white mb-6"
+        onClick={() => setShowCookModeFullscreen(true)}
+      >
+        Enter Cook Mode
+      </Button>
+      
       {/* Toggle Cook Mode (Mobile Only) */}
       <div className="lg:hidden mb-6">
         <Button 
-          className="w-full bg-plum-300 hover:bg-plum-400 text-white"
+          className="w-full bg-plum-700 hover:bg-plum-600 text-white"
           onClick={() => setIsCookMode(!isCookMode)}
         >
-          {isCookMode ? "Exit Cook Mode" : "Enter Cook Mode"}
+          {isCookMode ? "View Ingredients" : "View Instructions"}
         </Button>
       </div>
       
