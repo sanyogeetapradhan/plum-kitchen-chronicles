@@ -56,7 +56,7 @@
   }
 
   body {
-    @apply bg-plum-DEFAULT text-foreground font-opensans;
+    @apply bg-plum-900 text-foreground font-opensans;
   }
 
   h1, h2, h3, h4, h5, h6 {

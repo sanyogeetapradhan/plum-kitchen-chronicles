@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Pinterest, Twitter, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -17,9 +17,6 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="#" className="text-plum-300 hover:text-plum-200 transition-colors">
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-plum-300 hover:text-plum-200 transition-colors">
-                <Pinterest className="h-5 w-5" />
               </a>
               <a href="#" className="text-plum-300 hover:text-plum-200 transition-colors">
                 <Facebook className="h-5 w-5" />
