@@ -7,42 +7,42 @@ const categories = [
   {
     name: 'Breakfast',
     description: 'Start your morning with energy.',
-    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg', // Breakfast Image URL
+    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg', // Avocado Toast
     suggestions: ['Avocado Toast', 'Smoothie Bowl', 'Pancakes'],
     path: '/categories/breakfast',
   },
   {
     name: 'Lunch',
     description: 'Refuel with hearty noon meals.',
-    image: 'https://unsplash.com/photos/assorted-foods-on-stainless-steel-tray-wClFKcjhNcI?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash', // Fixed Lunch Image URL
+    image: 'https://images.pexels.com/photos/3728666/pexels-photo-3728666.jpeg', // Grilled Wrap
     suggestions: ['Grilled Wrap', 'Quinoa Salad', 'Burrito Bowl'],
     path: '/categories/lunch',
   },
   {
     name: 'Dinner',
     description: 'Wholesome and satisfying evening food.',
-    image: 'https://images.pexels.com/photos/2276674/pexels-photo-2276674.jpeg', // Dinner Image URL
+    image: 'https://images.pexels.com/photos/4611989/pexels-photo-4611989.jpeg', // Pasta
     suggestions: ['Pasta Alfredo', 'Tacos', 'Rice Bowl'],
     path: '/categories/dinner',
   },
   {
     name: 'Desserts',
     description: 'End your day on a sweet note.',
-    image: 'https://images.pexels.com/photos/4107688/pexels-photo-4107688.jpeg', // Desserts Image URL
+    image: 'https://images.pexels.com/photos/1471817/pexels-photo-1471817.jpeg', // Brownies
     suggestions: ['Brownies', 'Fruit Tart', 'Ice Cream'],
     path: '/categories/desserts',
   },
   {
     name: 'Drinks',
     description: 'Refresh, energize, or chill.',
-    image: 'https://images.pexels.com/photos/2152490/pexels-photo-2152490.jpeg', // Drinks Image URL
+    image: 'https://images.pexels.com/photos/1834395/pexels-photo-1834395.jpeg', // Iced Latte
     suggestions: ['Iced Latte', 'Smoothies', 'Fruit Punch'],
     path: '/categories/drinks',
   },
   {
     name: 'Snacks',
     description: 'Tasty treats anytime.',
-    image: 'https://images.pexels.com/photos/3965484/pexels-photo-3965484.jpeg', // Snacks Image URL
+    image: 'https://images.pexels.com/photos/3662804/pexels-photo-3662804.jpeg', // Nachos
     suggestions: ['Nachos', 'Fries', 'Dips & Crackers'],
     path: '/categories/snacks',
   },
